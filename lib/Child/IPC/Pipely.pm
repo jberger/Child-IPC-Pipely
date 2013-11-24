@@ -3,6 +3,9 @@ package Child::IPC::Pipely;
 use strict;
 use warnings;
 
+our $VERSION = '0.01';
+$VERSION = eval $VERSION;
+
 use base 'Child::IPC::Pipe';
 
 use IO::Pipely qw/pipely/;
@@ -20,7 +23,7 @@ sub shared_data {
 
 =head1 NAME
 
-Child-IPC-Pipely - use Child with IO::Pipely for more portable IPC
+Child::IPC::Pipely - use Child with IO::Pipely for more portable IPC
 
 =head1 SYNOPSIS
 
